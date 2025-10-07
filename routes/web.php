@@ -24,10 +24,9 @@ Route::get('/welcome', function () {
     return view ('welcome');
 });
 
-Route::get('/hubungi-kami', function () {
-return'<h1>Hubungi Kami</h1>';
+Route::get('/contact-us', function () {
+return view ('contact_us');
 });
-Route::redirect('/contact-us', '/hubungi-kami');
 
 Route::fallback(function () {
     return view('errorpage');

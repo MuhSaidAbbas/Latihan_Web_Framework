@@ -1,76 +1,89 @@
+{{-- resources/views/about.blade.php --}}
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami</title>
+    <title>Tentang Kami - Abyta Florist</title>
+
+    {{-- Bootstrap 5 CDN --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
-        }
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
+            background-color: #212529;
+            color: white;
+            padding: 2rem 0;
         }
         header h1 {
             margin: 0;
-        }
-        .main-content {
-            background: #fff;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
+            font-weight: bold;
         }
         footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            background: #333;
-            color: #fff;
+            background-color: #212529;
+            color: white;
+            padding: 1.5rem 0;
+            margin-top: 40px;
+        }
+        .main-content {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Tentang Abyta Florist</h1>
+    {{-- Header --}}
+    <header class="text-center">
+        <div class="container">
+            <h1>Tentang Abyta Florist</h1>
+            <p class="lead mt-2">Merayakan segala apa yang ada dengan bunga harapan</p>
+        </div>
     </header>
 
-    <div class="container">
+    {{-- Main Content --}}
+    <main class="container my-5">
         <div class="main-content">
-            <h2>Misi Kami</h2>
-            <p>
-                Selamat datang di Abyta Florist! Merayakan segala apa yang Ada dengan Bunga harapan
-            </p>
-            
-            <h2>Visi Kami</h2>
-            <p>
-                Memberikan semua kebahagiaan kepada semua yang perlu dirayakan
-            </p>
+            <div class="mb-4">
+                <h2 class="text-primary">Misi Kami</h2>
+                <p>
+                    Selamat datang di <strong>Abyta Florist</strong>! Kami hadir untuk membantu Anda
+                    merayakan setiap momen istimewa dengan bunga yang penuh makna dan harapan.
+                </p>
+            </div>
 
-            <h2>Tim Kami</h2>
-            <p>
-                Kami terdiri dari: Muh. Said Abbas, Muh. Syafir, Syaban Lahay
-            </p>
+            <div class="mb-4">
+                <h2 class="text-primary">Visi Kami</h2>
+                <p>
+                    Menjadi florist pilihan utama yang menghadirkan kebahagiaan melalui keindahan bunga,
+                    serta melayani dengan ketulusan di setiap kesempatan.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-primary">Tim Kami</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Muh. Said Abbas</li>
+                    <li class="list-group-item">Muh. Syafir</li>
+                    <li class="list-group-item">Syaban Lahay</li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <p>Hak Cipta &copy; 2025 Abyta Florist</p>
+    {{-- Footer --}}
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; {{ date('Y') }} Abyta Florist.</p>
+        </div>
     </footer>
 
+   
 </body>
 </html>

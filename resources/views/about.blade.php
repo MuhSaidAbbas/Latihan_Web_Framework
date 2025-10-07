@@ -1,90 +1,99 @@
+{{-- resources/views/story.blade.php --}}
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - Toko Buket Bunga</title>
+    <title>Cerita di Balik Buket Bunga Kami - Abyta Florist</title>
+
+    {{-- Bootstrap 5 --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
+            background-color: #f8f9fa;
+            color: #333;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            background-color: #fdfaf6;
-            color: #5d4037;
-        }
-        .container {
-            width: 85%;
-            max-width: 900px;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px 0;
         }
         header {
-            background: #a1887f;
-            color: #ffffff;
-            padding: 1.5rem 0;
-            text-align: center;
-            border-bottom: 4px solid #795548;
+            background-color: #212529;
+            color: #fff;
+            padding: 2rem 0;
+            border-bottom: 4px solid #495057;
         }
         header h1 {
+            font-weight: bold;
             margin: 0;
-            font-size: 2.5em;
         }
         .main-content {
-            background: #ffffff;
-            padding: 25px;
-            margin-top: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: #fff;
+            border-radius: 0.5rem;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
         }
         .main-content h2 {
-            color: #795548;
+            color: #0d6efd;
+            margin-top: 1.5rem;
         }
         .main-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
         }
         footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 25px;
-            background: #a1887f;
-            color: #ffffff;
+            background-color: #212529;
+            color: #fff;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Cerita di Balik Buket Bunga Kami</h1>
+    {{-- Header --}}
+    <header class="text-center">
+        <div class="container">
+            <h1>Cerita di Balik Buket Bunga Kami</h1>
+            <p class="lead mt-2">Setiap bunga punya kisah, setiap buket punya makna</p>
+        </div>
     </header>
 
-    <div class="container">
+    {{-- Main Content --}}
+    <main class="container my-5">
         <div class="main-content">
-            <img src="https://via.placeholder.com/800x400.png?text=Toko+Bunga+Kami" alt="Toko Buket Bunga">
-            
+            <img src="https://via.placeholder.com/800x400.png?text=Toko+Bunga+Kami" alt="Toko Buket Bunga" class="img-fluid">
+
             <h2>Cinta Kami Pada Bunga</h2>
             <p>
-                Selamat datang di toko kami! Kami memulai bisnis ini dari kecintaan yang mendalam terhadap keindahan dan keajaiban bunga. Bagi kami, bunga bukan hanya sekadar tanaman, tetapi juga cara untuk menyampaikan perasaan, merayakan momen, dan membawa kebahagiaan. Setiap buket yang kami rangkai dibuat dengan hati dan penuh perhatian.
+                Selamat datang di <strong>Abyta Florist</strong>! Kami memulai perjalanan ini dari kecintaan
+                terhadap keindahan dan keajaiban bunga. Bagi kami, bunga bukan hanya sekadar tanaman —
+                tetapi bahasa emosi, simbol kasih, dan wujud perayaan kehidupan. Setiap buket kami rangkai
+                dengan hati, perhatian, dan makna.
             </p>
             
             <h2>Mengapa Memilih Kami?</h2>
             <p>
-                Kami percaya bahwa setiap momen spesial pantas mendapatkan buket yang istimewa. Oleh karena itu, kami hanya menggunakan bunga-bunga paling segar yang kami pilih langsung dari petani lokal terbaik. Tim perangkai bunga kami yang berpengalaman siap membantu Anda menciptakan buket yang sempurna untuk segala acara, mulai dari ulang tahun, wisuda, pernikahan, hingga ucapan bela sungkawa.
+                Kami percaya bahwa setiap momen istimewa layak dirayakan dengan bunga yang sempurna.
+                Karena itu, kami hanya menggunakan bunga-bunga terbaik yang dipetik langsung dari
+                petani lokal terpercaya. Tim perangkai kami siap menciptakan buket yang indah untuk
+                segala acara — mulai dari ulang tahun, wisuda, pernikahan, hingga bela sungkawa.
             </p>
 
             <h2>Komitmen Kualitas</h2>
             <p>
-                Kualitas adalah prioritas utama kami. Kami memastikan setiap tangkai bunga dirawat dengan baik agar tetap segar dan indah saat tiba di tangan Anda. Kepuasan Anda adalah kebahagiaan kami, dan kami berkomitmen untuk memberikan pelayanan terbaik dan produk yang tak terlupakan.
+                Kualitas adalah prioritas utama kami. Kami memastikan setiap tangkai dirawat dengan baik
+                agar tetap segar dan memukau saat tiba di tangan Anda. Kepuasan pelanggan adalah kebahagiaan kami,
+                dan kami berkomitmen memberikan pelayanan terbaik di setiap pesanan.
             </p>
         </div>
-    </div>
+    </main>
 
-    <footer>
-        <p>Hak Cipta &copy; 2025 Nama Toko Bunga Anda</p>
+    {{-- Footer --}}
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; {{ date('Y') }} Abyta Florist. Semua Hak Cipta Dilindungi.</p>
+        </div>
     </footer>
 
 </body>
